@@ -51,8 +51,79 @@ STEP:11  On the board, by giving required input, the LEDs starts to glow light, 
 
 VERILOG CODE
 
-   <<< TYPE YOUR VERILOG CODE >>>
-
+# SR FLIPFLOP:
+```
+module srff(s,r,clk,reset,q);
+input s,r,clk,reset;
+output reg q;
+always@(posedge clk)
+begin
+if(reset==1)
+q =1'b0;
+else 
+begin
+case({s,r})
+ 2'b00: q = q;
+ 2'b01: q = 1'b0;
+ 2'b10: q = 1'b1;
+ 2'b11: q = 1'bx;
+ default:q = ~q;
+endcase
+end 
+end
+endmodule
+```
+# JK FLIPFLOP:
+```
+module jk_ff(j,k,clk,reset,q);
+input j,k,clk,reset;
+output reg q;
+always@(posedge clk)
+begin
+if(reset==1)
+q =1'b0;
+else 
+begin
+case({j,k})
+ 2'b00: q = q;
+ 2'b01: q = 1'b0;
+ 2'b10: q = 1'b1;
+ 2'b11: q = ~q;
+ default:q =1'b0;
+endcase
+end 
+end
+endmodule
+```
+# T FLIPFLOP:
+```
+module tff(clk,rst,j,q);
+input clk,rst,j;
+output reg q;
+always@(posedge clk)
+begin
+case(t)
+1'b0:q=q;
+1'b1:q=~q;
+default=q=1'b0;
+endcase
+end
+endmodule
+```
+# D FLIPFLOP:
+```
+module dff(clk,rst,d,q);
+input clk,rst,d;
+output reg q;
+always@(posedge clk)
+begin
+if(rst==1)
+q=1'b0;
+else
+q=d;
+end
+endmodule
+```
 OUTPUT WAVEFORM
  <<< PASTE YOUR OUTPUT WAVEFORM >>>
 
