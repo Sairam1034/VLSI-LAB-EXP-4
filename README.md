@@ -1,5 +1,5 @@
 # VLSI-LAB-EXP-4
-SIMULATION AND IMPLEMENTATION OF SEQUENTIAL LOGIC CIRCUITS
+# SIMULATION AND IMPLEMENTATION OF SEQUENTIAL LOGIC CIRCUITS
 
 AIM: 
  To simulate and synthesis SR, JK, T, D - FLIPFLOP, COUNTER DESIGN using Xilinx ISE.
@@ -125,8 +125,19 @@ end
 endmodule
 ```
 OUTPUT WAVEFORM
- <<< PASTE YOUR OUTPUT WAVEFORM >>>
+ # SR FLIPFLOP:
+ ![image](https://github.com/Sairam1034/VLSI-LAB-EXP-4/assets/161026996/dec61c69-af5b-40fe-80d5-7a52cb205cae)
+ # JK FLIPFLOP:
+ ![image](https://github.com/Sairam1034/VLSI-LAB-EXP-4/assets/161026996/90863816-6537-4364-be35-ad2ec7a8ad23)
+# T FLIPFLOP:
+![image](https://github.com/Sairam1034/VLSI-LAB-EXP-4/assets/161026996/1862ec9a-d1f6-4177-ae56-df77a1562736)
+# D FLIPFLOP:
+![image](https://github.com/Sairam1034/VLSI-LAB-EXP-4/assets/161026996/a0f6dc24-a4b2-44af-a3bd-67ecd5692e3d)
 
-RESULT
+# RESULT
+Hence thus given To simulate and synthesis SR, JK, T, D - FLIPFLOP, COUNTER DESIGN using vivado
+
+
+
 
 
